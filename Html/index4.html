@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIFTED HANDS.COM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GIFTED HANDS GROUP OF COMPANIES</h1>
+    </header>
+    <nav>
+      <a href="./">HOME</a>
+      <a href="./">DASHBOARD</a>
+      <a href="./">ABOUT US</a>
+      <a href="./">CONTACT US</a>
+    </nav><br><br>
+    <h1>WELCOME</h1><br><br>
+    
+    <h2>ALREADY EXISTING ACCOUNT</h2><br>
+    <form action="/subscribe" method="post" style="width: 50px;">
+        <fieldset>
+            <legend>SIGN IN</legend>
+            <input type="email" name="email">
+            <button>ENTER</button>
+        </fieldset>
+    </form><br><br>
+    <h1>OR</h1><br><br>
+    <h2>CREATE A NEW ACCOUNT</h2><br>
+    <p>
+        <form action="/signup" method="post">
+            <label>TITLE</label><br><br>
+            <label>
+                <input type="radio" name="title" value="mr">
+                Mr
+            </label>
+            <label>
+                <input type="radio" name="title" value="mrs">
+                Mrs
+            </label>
+            <label>
+                <input type="radio" name="title" value="miss">
+                Miss
+            </label>
+            <label>
+                <input type="radio" name="title" value="others">
+                Others
+            </label>
+        </form>
+        <p>
+            <label>First Name</label><br>
+            <input type="text" name="first_name">
+        </p>
+        <p>
+            <label> Middle Name</label><br>
+            <input type="text" name="middle_name">
+        </p>
+        <p>
+            <label>Last Name</label><br>
+            <input type="text" name="last_name">
+        </p>
+        <p>
+            <label>Email</label><br>
+            <input type="email" name="email" required>
+        </p>
+        <p>
+            <label>Password</label><br>
+            <input type="password" name="password">
+        </p>
+        <p>
+            <label>COUNTRY</label><br>
+            <select>
+                <option>Ghana</option>
+                <option>Nigeria</option>
+                <option>South Africa</option>
+                <option>Togo</option>
+                <option>Burkina Faso</option>
+                <option>Cote DIviore</option>
+            </select>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="terms">
+                I agree to the <a href="terms">terms and conditions</a>
+            </label>
+        </p>
+        <dl>
+            <dt>CLICK COMPLETE</dt><br>
+            <button>COMPLETE</button><br><br>
+            <dd>This Will Activate Your Account</dd>
+        </dl>  
+    </footer>
+  </body>
+</html>

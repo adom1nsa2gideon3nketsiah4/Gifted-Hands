@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIDIPRIS</title>
+</head>
+<body>
+    <header>
+        <h1>
+            GIFTED HANDS GROUP OF COMPANIES
+        </h1>
+    </header>
+    <div class="hometabs">
+        <a href="home">HOME</a>
+        <a href="aboutus">ABOUT US</a>
+        <a href="services">SERVICES</a>
+        <a href="login">LOGIN</a>
+        <a href="register">REGISTER</a>
+    </div><br><br>
+    <div class="sidetabs">
+        <ul>
+            <li>Dashboard</li>
+            <li>Products</li>
+            <li>Gallery</li>
+            <li>Contact Us</li>
+        </ul><br><br>
+    </div>
+    <h2>ALREADY EXISTING ACCOUNT</h2>
+    <form action="/subscribe" method="post">
+        <fieldset>
+            <legend>SIGN IN</legend>
+            <input type="text" name="email" id="email" class="oxlade" style="height: auto; width: auto; padding: auto;">
+            <button>ENTER</button>
+        </fieldset>
+    </form><br>
+    <h1>OR</h1><br>
+    <h2>CREATE A NEW ACCOUNT</h2><br>
+    <p>
+        <form action="/signup" method="post"></form>
+        <label for="title">TITLE</label><br><br>
+        <label for="mr">
+            <input type="radio" name="title" id="mr">
+            Mr
+        </label>
+        <label for="mrs">
+            <input type="radio" name="title" id="mrs">
+            Mrs
+        </label>
+        <label for="miss">
+            <input type="radio" name="title" id="miss">
+            Miss
+        </label>
+        <label for="others">
+            <input type="radio" name="title" id="others">
+            Others
+        </label>
+    </p>
+    <main>
+           <div class="container1">
+               <form action="">
+                   <p>
+                    <label for="firstname">First Name</label><br>
+                    <input type="text" name="firstname" id="firstname" class="oxlade">
+                   </p>
+
+                   <p>
+                    <label for="middlename">Middle Name</label><br>
+                    <input type="text" name="middlename" id="middlename"> 
+                   </p>
+
+                   <p>
+                    <label for="surname">Surname</label><br>
+                    <input type="text" name="surname" id="surname">
+                   </p>
+
+                   <p>
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" name="dob" id="dob">
+                   </p>
+
+                   <p>
+                       <label for="gender">Gender</label><br>
+                       <select name="gender" id="gender">
+                           <option value="male">Male</option>
+                           <option value="female">Female</option>
+                       </select>
+                   </p>
+                   <p>
+                       <label for="country">Country</label><br>
+                       <select>
+                           <option value="ghana">Ghana</option>
+                           <option value="togo">Togo</option>
+                           <option value="burkina faso">Burkina Faso</option>
+                           <option value="Cote Divoire">Cote Divoire</option>
+                           <option value="nigeria">Nigeria</option>
+                       </select>
+                   </p>
+
+                   <p>
+                       <label for="phonenumber">Phone Number</label><br>
+                       <input type="tel" name="phonenumber" id="phonenumber">
+                   </p>
+
+                   <p>
+                       <label for="national-id">National Identification Card</label><br>
+                       <select name="national-id" id="national-id">
+                            <option value="voters-id">Voters ID</option>
+                            <option value="drivers-license">Drivers License</option>
+                            <option value="passport">Passport</option>
+                            <option value="ghana-card">Ghana Card</option>
+                            <option value="nhis">NHIS</option>
+                       </select>
+                   </p>
+
+                   <p>
+                       <label for="national-id-number">National Identification Number</label><br>
+                       <input type="text" name="national-id-number" id="national-id-number">
+                   </p>
+
+                   <p>
+                       <label for="password">Password</label><br>
+                       <input type="text" name="password" id="password">
+                       <dl>
+                           <dt>Your Password Should Not Be Less Than Ten(10) Characters</dt>
+                       </dl>
+                   </p>
+                   <p>
+                       <input type="checkbox" name="terms" id="terms">
+                       I agree with the <a href="terms">terms and conditions</a>
+                   </p><br>
+                   <dl>
+                       <dt>Click HOLD to pause the registration and NEXT to continue with registration</dt>
+                   </dl>
+               </form>
+           </div>
+    </main>
+    <footer>
+        <BUtton>HOLD</BUtton>
+        <button>NEXT</button>
+    </footer>
+</body>
+</html>

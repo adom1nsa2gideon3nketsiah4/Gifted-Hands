@@ -1,0 +1,51 @@
+body {
+  background-image: url(./image6.jpeg);
+}
+nav a {
+  background-color: darkgray;
+  color: black;
+}
+.container1 {
+  background-color: blanchedalmond;
+}
+ol {
+  background-color: burlywood;
+  color: black;
+  font-size: small;
+  font-weight: bolder;
+  font-style: oblique;
+}
+ul {
+  background-color: rgb(172, 172, 162);
+  color: black;
+  font-size: small;
+  font-weight: bolder;
+  font-style: oblique;
+}
+.mybox {
+  background-color: rgb(97, 60, 4);
+}
+.container2 {
+  background-color: rgb(141, 81, 3);
+}
+.mybox2 {
+  background-color: rgb(88, 72, 4);
+}
+.image2 a {
+  background-color: rgb(107, 100, 7);
+}
+table {
+  background-color: rgb(250, 186, 186));
+  color: black;
+}
+button {
+  background-color: rgb(221, 236, 190);
+  color: black;
+  font-size: 30px;
+  font-weight: 900;
+}
+footer {
+  background-color: rgb(238, 171, 45);
+  color: black;
+  font-size: 60px;
+}
