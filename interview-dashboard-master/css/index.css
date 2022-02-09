@@ -1,0 +1,243 @@
+:root {
+  /* theme colors */
+  --bg-color: #161819;
+  --bg-deep: #0d1011;
+  --surface-color: #252728;
+  --primary-color: #ff5f52;
+  --text-color: #cecdce;
+  /* padding values*/
+  --internal-space: 40px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.parent-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  padding: var(--internal-space);
+}
+
+.left-column {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.middle-column {
+  width: 65%;
+  margin: 0px var(--internal-space);
+}
+
+.right-column {
+  width: 25%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+dl.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 60px;
+}
+
+dd.menu-item {
+  padding: 4px 15px;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: inline-flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+dd.menu-item.active {
+  background-color: var(--primary-color);
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.user-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--surface-color);
+  border-radius: 5px;
+  padding: 10px 8px;
+}
+
+.user-wrapper > .user-profile {
+  display: inline-flex;
+  align-items: center;
+}
+
+.user-wrapper > .user-profile > .user-icon {
+  width: 20px;
+  height: 20px;
+  background-color: hotpink;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.user-hello {
+  font-weight: 700;
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+main {
+  padding: 40px;
+  background-color: var(--bg-deep);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: var(--surface-color);
+}
+
+div.group {
+  display: inline-flex;
+  align-items: center;
+}
+
+div.group > div.summary {
+  margin-right: 20px;
+}
+
+div.group > div.summary > p:first-child,
+div.group > div.summary > p:last-child {
+  font-size: 12px;
+  font-weight: 300;
+}
+div.group > div.summary > p:nth-child(2) {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+div.group > svg.circle-progress {
+  width: 50px;
+  height: 50px;
+  transform: rotateY(3.142rad);
+}
+
+.track {
+  stroke-width: 25;
+  stroke: rgb(59, 56, 56);
+  fill: none;
+}
+
+.progress {
+  stroke-width: 25;
+  stroke: hotpink;
+  fill: none;
+  stroke-linecap: square;
+}
+
+.rankings {
+  margin: 40px auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rankings > .applicant {
+  background-color: var(--surface-color);
+  padding: 90px 60px 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rankings > .applicant > .applicant-background {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.rankings > .applicant > .applicant-background > img {
+  width: 100%;
+  height: 125%;
+  border-radius: 60px;
+  /* object-fit: contain; */
+  position: absolute;
+  top: -30px;
+}
+
+.rankings > .applicant > .applicant-background > span {
+  position: absolute;
+  right: -50px;
+  background-color: #2b2d2e;
+  padding: 1px 20px;
+  border-radius: 20px;
+}
+
+div.rankings > div.applicant > p {
+  margin: 5px auto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+div.rankings > div.applicant > p.applicant-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+div.rankings > div.applicant > p > span.total-points {
+  font-weight: 800;
+}
+
+div.rankings > div.applicant > button {
+  width: 100%;
+  padding: 12px 40px;
+  margin: 20px auto;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid rgb(63, 63, 63);
+  border-radius: 8px;
+}
